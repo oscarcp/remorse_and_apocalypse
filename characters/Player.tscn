@@ -1,0 +1,150 @@
+[gd_scene load_steps=74 format=2]
+
+[ext_resource path="res://assets/images/player/adventurer-crouch-walk-05.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/player/adventurer-walk-01.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/player/adventurer-drop-kick-00.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/player/adventurer-get-up-01.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-01.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-01.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/player/adventurer-crouch-walk-01.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/player/adventurer-kick-02.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/player/adventurer-punch-00.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/player/adventurer-kick-01.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/player/adventurer-get-up-02.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/player/adventurer-run2-00.png" type="Texture" id=12]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-00.png" type="Texture" id=13]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-00.png" type="Texture" id=14]
+[ext_resource path="res://assets/images/player/adventurer-kick-00.png" type="Texture" id=15]
+[ext_resource path="res://assets/images/player/adventurer-walk-03.png" type="Texture" id=16]
+[ext_resource path="res://assets/images/player/adventurer-crouch-walk-00.png" type="Texture" id=17]
+[ext_resource path="res://assets/images/player/adventurer-crouch-walk-03.png" type="Texture" id=18]
+[ext_resource path="res://assets/images/player/adventurer-crouch-walk-02.png" type="Texture" id=19]
+[ext_resource path="res://assets/images/player/adventurer-punch-01.png" type="Texture" id=20]
+[ext_resource path="res://assets/images/player/adventurer-punch-02.png" type="Texture" id=21]
+[ext_resource path="res://assets/images/player/adventurer-punch-03.png" type="Texture" id=22]
+[ext_resource path="res://assets/images/player/adventurer-punch-04.png" type="Texture" id=23]
+[ext_resource path="res://assets/images/player/adventurer-punch-05.png" type="Texture" id=24]
+[ext_resource path="res://assets/images/player/adventurer-punch-06.png" type="Texture" id=25]
+[ext_resource path="res://assets/images/player/adventurer-punch-07.png" type="Texture" id=26]
+[ext_resource path="res://assets/images/player/adventurer-punch-08.png" type="Texture" id=27]
+[ext_resource path="res://assets/images/player/adventurer-punch-09.png" type="Texture" id=28]
+[ext_resource path="res://assets/images/player/adventurer-punch-10.png" type="Texture" id=29]
+[ext_resource path="res://assets/images/player/adventurer-punch-11.png" type="Texture" id=30]
+[ext_resource path="res://assets/images/player/adventurer-punch-12.png" type="Texture" id=31]
+[ext_resource path="res://assets/images/player/adventurer-run2-01.png" type="Texture" id=32]
+[ext_resource path="res://assets/images/player/adventurer-run2-02.png" type="Texture" id=33]
+[ext_resource path="res://assets/images/player/adventurer-walk-00.png" type="Texture" id=34]
+[ext_resource path="res://assets/images/player/adventurer-crouch-walk-04.png" type="Texture" id=35]
+[ext_resource path="res://assets/images/player/adventurer-drop-kick-01.png" type="Texture" id=36]
+[ext_resource path="res://assets/images/player/adventurer-wall-run-00.png" type="Texture" id=37]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-02.png" type="Texture" id=38]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-03.png" type="Texture" id=39]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-04.png" type="Texture" id=40]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-06.png" type="Texture" id=41]
+[ext_resource path="res://assets/images/player/adventurer-run-punch-05.png" type="Texture" id=42]
+[ext_resource path="res://assets/images/player/adventurer-run2-03.png" type="Texture" id=43]
+[ext_resource path="res://assets/images/player/adventurer-run2-04.png" type="Texture" id=44]
+[ext_resource path="res://assets/images/player/adventurer-run2-05.png" type="Texture" id=45]
+[ext_resource path="res://assets/images/player/adventurer-walk-02.png" type="Texture" id=46]
+[ext_resource path="res://assets/images/player/adventurer-walk-04.png" type="Texture" id=47]
+[ext_resource path="res://assets/images/player/adventurer-walk-05.png" type="Texture" id=48]
+[ext_resource path="res://assets/images/player/adventurer-kick-04.png" type="Texture" id=49]
+[ext_resource path="res://assets/images/player/adventurer-kick-05.png" type="Texture" id=50]
+[ext_resource path="res://assets/images/player/adventurer-kick-06.png" type="Texture" id=51]
+[ext_resource path="res://assets/images/player/adventurer-kick-07.png" type="Texture" id=52]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-02.png" type="Texture" id=53]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-03.png" type="Texture" id=54]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-04.png" type="Texture" id=55]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-05.png" type="Texture" id=56]
+[ext_resource path="res://assets/images/player/adventurer-knock-dwn-06.png" type="Texture" id=57]
+[ext_resource path="res://assets/images/player/adventurer-get-up-03.png" type="Texture" id=58]
+[ext_resource path="res://assets/images/player/adventurer-get-up-04.png" type="Texture" id=59]
+[ext_resource path="res://assets/images/player/adventurer-get-up-05.png" type="Texture" id=60]
+[ext_resource path="res://assets/images/player/adventurer-get-up-06.png" type="Texture" id=61]
+[ext_resource path="res://assets/images/player/adventurer-kick-03.png" type="Texture" id=62]
+[ext_resource path="res://assets/images/player/adventurer-get-up-00.png" type="Texture" id=63]
+[ext_resource path="res://assets/images/player/adventurer-wall-run-01.png" type="Texture" id=64]
+[ext_resource path="res://assets/images/player/adventurer-wall-run-02.png" type="Texture" id=65]
+[ext_resource path="res://assets/images/player/adventurer-wall-run-03.png" type="Texture" id=66]
+[ext_resource path="res://assets/images/player/adventurer-wall-run-04.png" type="Texture" id=67]
+[ext_resource path="res://assets/images/player/adventurer-wall-run-05.png" type="Texture" id=68]
+[ext_resource path="res://assets/images/player/adventurer-drop-kick-02.png" type="Texture" id=69]
+[ext_resource path="res://assets/images/player/adventurer-drop-kick-03.png" type="Texture" id=70]
+[ext_resource path="res://characters/Player.gd" type="Script" id=71]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 36 ), ExtResource( 69 ), ExtResource( 70 ) ],
+"loop": true,
+"name": "drop_kick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 5 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "knockdown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 4 ), ExtResource( 11 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "get_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 6 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "run_punch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 7 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 35 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "crouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ) ],
+"loop": true,
+"name": "wall_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 2 ), ExtResource( 46 ), ExtResource( 16 ), ExtResource( 47 ), ExtResource( 48 ) ],
+"loop": true,
+"name": "walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "punch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "kick",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 13.4497, 17.5052 )
+
+[node name="Player" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 13
+script = ExtResource( 71 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.36359, 2.52269 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.4, 0.4 )
+process_mode = 0
+limit_smoothed = true
+smoothing_enabled = true
+editor_draw_drag_margin = true

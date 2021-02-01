@@ -1,0 +1,170 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://assets/images/bg_menu.png" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/dogicapixel.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/dogicapixelbold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://interface/scripts/PlayButton.gd" type="Script" id=4]
+[ext_resource path="res://interface/scripts/QuitButton.gd" type="Script" id=5]
+[ext_resource path="res://assets/music/Daniel Birch - Indigo Strokes.ogg" type="AudioStream" id=6]
+[ext_resource path="res://assets/sfx/goodbye.ogg" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxLine" id=2]
+color = Color( 1, 1, 1, 1 )
+thickness = 3
+vertical = true
+
+[sub_resource type="StyleBoxEmpty" id=3]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxLine" id=5]
+color = Color( 1, 1, 1, 1 )
+thickness = 3
+vertical = true
+
+[sub_resource type="StyleBoxEmpty" id=6]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxLine" id=8]
+color = Color( 1, 1, 1, 1 )
+thickness = 3
+vertical = true
+
+[sub_resource type="StyleBoxEmpty" id=9]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxLine" id=11]
+color = Color( 1, 0.996078, 0.996078, 1 )
+thickness = 3
+vertical = true
+
+[sub_resource type="StyleBoxEmpty" id=12]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+
+[sub_resource type="DynamicFont" id=13]
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=14]
+resource_name = "fadeout"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1e-05, 1e-05 ) ]
+}
+
+[node name="MainScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg_menu" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -343.0
+margin_top = 152.0
+margin_right = 343.0
+margin_bottom = 177.0
+custom_fonts/font = SubResource( 1 )
+text = "Remorse and Apocalypse"
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -46.0
+margin_right = 17.0
+margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="Menu"]
+margin_right = 92.0
+margin_bottom = 42.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "play"
+script = ExtResource( 4 )
+
+[node name="OptionsButton" type="Button" parent="Menu"]
+margin_top = 46.0
+margin_right = 92.0
+margin_bottom = 88.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
+text = "options"
+
+[node name="CreditsButton" type="Button" parent="Menu"]
+margin_top = 92.0
+margin_right = 92.0
+margin_bottom = 134.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+text = "credits"
+
+[node name="QuitButton" type="Button" parent="Menu"]
+margin_top = 138.0
+margin_right = 92.0
+margin_bottom = 180.0
+custom_styles/hover = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+custom_fonts/font = SubResource( 13 )
+text = "quit"
+script = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/fadeout = SubResource( 14 )
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="Goodbye" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+[connection signal="button_up" from="Menu/PlayButton" to="Menu/PlayButton" method="_on_PlayButton_button_up"]
+[connection signal="button_up" from="Menu/QuitButton" to="Menu/QuitButton" method="_on_QuitButton_button_up"]

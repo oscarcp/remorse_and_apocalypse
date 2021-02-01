@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/images/bg_black.png" type="Texture" id=1]
+[ext_resource path="res://scenes/scripts/RichTextLabel.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/dogicapixel.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="World" type="Node2D"]
+
+[node name="bg" type="Sprite" parent="."]
+scale = Vector2( 1280, 720 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.629
+anchor_bottom = 0.5
+margin_left = 620.0
+margin_top = 360.0
+margin_right = 1210.0
+margin_bottom = 400.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "I wanted to go on epic adventures..."
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
