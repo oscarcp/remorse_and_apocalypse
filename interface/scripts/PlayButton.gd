@@ -7,4 +7,5 @@ func _on_PlayButton_button_up() -> void:
     animation.play("fadeout")
     # Wait for it to finish
     yield(animation, "animation_finished")
-    # TODO: Load new scenario
+    # Load new scenario
+    get_tree().change_scene("res://scenes/story.tscn")

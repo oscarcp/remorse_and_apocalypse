@@ -1,25 +1,40 @@
 extends Actor
 
-#func play_steps_audio() -> void:
-#    var step_sound = get_node("PlayerStep")
-#    while Input.is_action_pressed("move_right") or \
-#          Input.is_action_pressed("move_left"):
-#        step_sound.pitch_scale = 1.0
-#        if Input.is_action_pressed("run"):
-#            step_sound.pitch_scale = 1.25
-#        if not step_sound.playing:
-#            step_sound.playing = true
-#        else:
-#            return
-#    step_sound.stop()
+func play_steps_audio() -> void:
+    var step_sound = get_node("PlayerStep")
+    while Input.is_action_pressed("move_right") or \
+          Input.is_action_pressed("move_left"):
+        step_sound.pitch_scale = 1.0
+        if Input.is_action_pressed("run"):
+            step_sound.pitch_scale = 1.25
+        if not step_sound.playing:
+            step_sound.playing = true
+        else:
+            return
+    step_sound.stop()
 
 func _process(delta: float) -> void:
-    if Input.is_action_pressed("move_left"):
+    if Input.is_action_pressed("jump"):
+        $AnimatedSprite.play("jump")
+    elif Input.is_action_pressed("attack"):
+        $AnimatedSprite.play("punch")
+    elif Input.is_action_pressed("move_left") and not \
+         Input.is_action_pressed("run"):
         $AnimatedSprite.play("walk")
-    elif Input.is_action_pressed("run"):
+        $AnimatedSprite.flip_h = true
+    elif Input.is_action_pressed("move_right") and not \
+         Input.is_action_pressed("run"):
+        $AnimatedSprite.play("walk")
+        $AnimatedSprite.flip_h = false
+    elif Input.is_action_pressed("run") and \
+         Input.is_action_pressed("move_left") or \
+         Input.is_action_pressed("move_right"):
         $AnimatedSprite.play("run")
+    elif Input.is_action_pressed("crouch"):
+        $AnimatedSprite.play("crouch")
     else:
-        $AnimatedSprite.play("walk")
+        $AnimatedSprite.play("idle")
+
 func _physics_process(delta: float) -> void:
     var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
     var direction: = get_direction()
@@ -28,7 +43,8 @@ func _physics_process(delta: float) -> void:
 
 
 func get_direction() -> Vector2:
-#    play_steps_audio()
+    # Really annoying! Animation istoo fast to sync
+    #play_steps_audio()
     return Vector2(
         Input.get_action_strength("move_right") -
         Input.get_action_strength("move_left"),

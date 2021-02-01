@@ -15,16 +15,28 @@ texture = ExtResource( 1 )
 centered = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-anchor_left = 0.5
+anchor_left = 1.0
 anchor_top = 0.5
-anchor_right = 0.629
+anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 620.0
-margin_top = 360.0
-margin_right = 1210.0
-margin_bottom = 400.0
+margin_left = 382.841
+margin_top = 310.388
+margin_right = 925.841
+margin_bottom = 498.388
 custom_fonts/normal_font = SubResource( 1 )
-text = "I wanted to go on epic adventures..."
+text = "I wanted to go on epic adventures...
+
+
+
+Now I'm lost in the woods,
+
+I guess I got my own adventure after all.
+
+
+
+
+Mom will be really angry..."
+scroll_active = false
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
