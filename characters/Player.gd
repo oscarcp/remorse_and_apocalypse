@@ -59,7 +59,7 @@ func calculate_move_velocity(linear_velocity: Vector2,
     var out: = linear_velocity
     out.x = speed.x * direction.x
     if Input.is_action_pressed("run"):
-        out.x = (speed.x * 1.4) * direction.x
+        out.x = (speed.x * 2) * direction.x
     out.y += gravity * get_physics_process_delta_time()
     if direction.y == -1.0:
         out.y = speed.y * direction.y

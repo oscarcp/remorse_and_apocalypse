@@ -30,13 +30,15 @@ config/icon="res://icon.png"
 
 settings/fps/force_fps=60
 settings/stdout/print_fps=true
-settings/stdout/verbose_stdout=true
 
 [display]
 
 window/size/width=928
 window/size/height=640
 window/dpi/allow_hidpi=true
+window/vsync/use_vsync=false
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
 window/stretch/mode="2d"
 window/stretch/aspect="keep_width"
 
@@ -145,4 +147,6 @@ quality/filters/anisotropic_filter_level=1
 quality/subsurface_scattering/quality=2
 quality/voxel_cone_tracing/high_quality=true
 environment/default_clear_color=Color( 0, 0, 0, 1 )
+quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"
+quality/dynamic_fonts/use_oversampling=false
